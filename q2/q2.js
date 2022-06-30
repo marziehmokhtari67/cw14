@@ -1,6 +1,13 @@
+
 $(document).ready(function () {
-$("body").append('<p></p>')
-$(".form-select").change(function(){
-    $("p").text($(this).val())
-})
+
+$("select").change(function(){
+    
+    let text =''
+    $("select option:selected").each (function(){
+        text += $(this).text()
+        
+    })
+    $("#para").html(text)
+}).trigger("change")
 })
