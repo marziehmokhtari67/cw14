@@ -11,3 +11,4 @@ $("select").change(function(){
     $("#para").html(text)
 }).trigger("change")
 })
+$("input[checked]")
